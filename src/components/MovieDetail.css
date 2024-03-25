@@ -1,0 +1,68 @@
+/* MovieDetail.css */
+.movie-detail-container {
+    color: #fff;
+    background-color: #141414;
+    padding: 20px;
+    min-height: 100vh;
+  }
+  
+  .movie-banner {
+    position: relative;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(50%);
+  }
+  
+  .movie-content {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  
+  .movie-title {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .movie-genres {
+    font-size: 18px;
+    opacity: 0.7;
+    margin-bottom: 20px;
+  }
+  
+  .movie-overview {
+    font-size: 20px;
+    max-width: 50%;
+    line-height: 1.6;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .movie-banner {
+      height: 200px;
+    }
+  
+    .movie-content {
+      bottom: 10px;
+    }
+  
+    .movie-title {
+      font-size: 24px;
+    }
+  
+    .movie-overview {
+      max-width: 100%;
+      font-size: 16px;
+    }
+  
+    .movie-genres {
+      font-size: 16px;
+    }
+  }
+  

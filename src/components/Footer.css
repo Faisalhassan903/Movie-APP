@@ -1,0 +1,54 @@
+.footer {
+    background-color: #141414; /* Dark background similar to Netflix's theme */
+    color: #fff; /* Light text for contrast */
+    padding: 20px 0; /* Padding on top and bottom */
+    font-size: 14px; /* Smaller font size for footer text */
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-evenly; /* Space out content evenly */
+    flex-wrap: wrap; /* Wrap content on smaller screens */
+    max-width: 1200px; /* Max width to prevent overly wide footers */
+    margin: auto; /* Center the footer content */
+  }
+  
+  .footer-section {
+    margin: 10px 20px; /* Margin around each footer section for spacing */
+  }
+  
+  .footer-section h4 {
+    margin-bottom: 15px; /* Space below section headers */
+    color: #e50914; /* Netflix red for headers */
+  }
+  
+  .footer-section a {
+    color: #b3b3b3; /* Lighter text color for links */
+    text-decoration: none; /* Remove underline from links */
+    display: block; /* Display links in block to stack vertically */
+  }
+  
+  .footer-section a:hover {
+    color: #fff; /* White color for links on hover */
+  }
+  
+  .footer-bottom {
+    text-align: center; /* Center-align the bottom footer text */
+    border-top: 1px solid #4a4a4a; /* Top border for separation */
+    padding-top: 20px; /* Padding on top */
+    margin-top: 20px; /* Margin on top */
+    font-size: 12px; /* Smaller font size for bottom text */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 600px) {
+    .footer-content {
+      justify-content: center; /* Center content on small screens */
+    }
+  
+    .footer-section {
+      margin: 10px; /* Reduced margin for small screens */
+      text-align: center; /* Center-align text for consistency */
+    }
+  }
+  

@@ -1,0 +1,76 @@
+/* Netflix-themed Background and Text */
+body {
+  background-color: #141414; /* Darker shade similar to Netflix's background */
+  color: #ffffff; /* Keeping text color white for contrast */
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Netflix uses a similar font stack */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Adjust link colors to match Netflix's theme */
+
+
+a:hover, a:focus {
+  color: #f40612; /* A slightly different shade of red for hover/focus */
+  text-decoration: underline; /* Add underline on hover/focus for better accessibility */
+}
+
+/* Netflix-themed Button */
+.button, button {
+  background-color: #e50914; /* Netflix's brand red for buttons */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+
+/* Container and Margin Utilities */
+
+
+/* Margin and Padding Utilities */
+.mt-4 {
+  margin-top: 1rem; /* 16px if 1rem = 16px */
+}
+
+.pt-4 {
+  padding-top: 1rem;
+}
+
+
+
+/* Netflix-themed Input Fields */
+input[type="text"], input[type="password"], input[type="email"] {
+  background-color: #333;
+  border: 1px solid #333;
+  color: #fff;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus {
+  border-color: #e50914; /* Highlight input border in Netflix red when focused */
+  outline: none;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #141414;
+  color: #757575; /* Lighter text for the footer */
+  padding: 20px 0;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Utilize these styles to extend your application's CSS with a Netflix-like theme. 
+Adjust colors, sizes, and margins as necessary to fit your application's layout and design. */
