@@ -1,6 +1,6 @@
-import  { useEffect } from 'react';
+import { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Layout from './components/Layout'; // Import the Layout component
+import Layout from './components/Layout';
 import HomePage from './pages/HomePage';
 import MoviePage from './pages/MoviePage';
 import SignInPage from './pages/SignInPage';
@@ -11,7 +11,7 @@ import ProfileCreation from './components/ProfileCreation';
 import ProfileManagement from './components/ProfileManagment';
 import ProtectedRoute from './components/ProtectedRoute';
 import './App.css';
-import HeroSection from './components/Herosection';
+import Herosection from  "./components/Herosection";
 
 function App() {
   useEffect(() => {
@@ -35,15 +35,17 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={
-           
           <Layout>
-              <HeroSection/>
-            <ProtectedRoute><HomePage /></ProtectedRoute>
+            <Herosection />
+            <HomePage />
           </Layout>
         } />
         <Route path="/movie/:id" element={
           <Layout>
-            <MovieDetail />
+            {/* Apply ProtectedRoute only to MovieDetail */}
+            <ProtectedRoute>
+              <MovieDetail />
+            </ProtectedRoute>
           </Layout>
         } />
         <Route path="/movies" element={
@@ -63,7 +65,7 @@ function App() {
         } />
         <Route path="/search" element={
           <Layout>
-            <ProtectedRoute><SearchPage /></ProtectedRoute>
+            <SearchPage />
           </Layout>
         } />
         <Route path="/profiles/create" element={
